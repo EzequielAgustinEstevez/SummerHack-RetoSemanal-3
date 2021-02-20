@@ -1,0 +1,49 @@
+header{
+    background-color: #a4ebf3;
+}
+.menu nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+nav h1{
+    align-self: center;
+}
+.lista{
+    background-image: url(../img/fondo-triste.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20vh;
+    *opacity: 0.2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.lista h1{
+    padding-bottom: 20vh;
+    opacity: 1;
+}
+.contenedor-boton-movil{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.boton-agregar-movil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-agregar-movil button{
+    border-radius: 50%;
+    background-color:#31C593;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    color: #fff;
+    font-family: none;
+    opacity: 1;
+}

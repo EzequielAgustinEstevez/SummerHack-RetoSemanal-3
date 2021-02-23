@@ -1,5 +1,5 @@
 
-let guardar = document.getElementById("guardar").addEventListener('click', function () {/* espera el click */
+let guardar = document.getElementById("guardar").addEventListener('touchend', function () {/* espera el touchend */
     let producto = document.getElementById("Producto").value/* guardamos el valor del id Producto */
     let nota = document.getElementById("Nota").value/* guardamos el valor del id Nota */
     let categoria = document.getElementById("Categoria").value/* guardardamos el valor de Categoria */

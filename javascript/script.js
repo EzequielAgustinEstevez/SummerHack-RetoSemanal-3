@@ -1,5 +1,5 @@
 /* Guardar en lista desde modal */
-let guardar = document.getElementById("guardar").addEventListener('click', function () {/* espera el click */
+let guardar = document.getElementById("guardar").addEventListener('touchend', function () {/* espera el touchend */
     let producto = document.getElementById("Producto").value/* guardamos el valor del id Producto */
     let nota = document.getElementById("Nota").value/* guardamos el valor del id Nota */
     let categoria = document.getElementById("Categoria").value/* guardardamos el valor de Categoria */
@@ -17,7 +17,7 @@ let guardar = document.getElementById("guardar").addEventListener('click', funct
     }
 })
 /* Mostrar detalle de productos */
-let mas = document.getElementById("ListaProductosItems").addEventListener('click', function (e) {
+let mas = document.getElementById("ListaProductosItems").addEventListener('touchend', function (e) {
     document.getElementById("ListaProductos").style.display = "none"
     document.getElementById("DetalleProducto").style.display = "flex"
     
@@ -32,7 +32,7 @@ let mas = document.getElementById("ListaProductosItems").addEventListener('click
 })
 
 /* Mostrar lista de productos */
-let menos = document.getElementById("volver__button").addEventListener('click', function () {
+let menos = document.getElementById("volver__button").addEventListener('touchend', function () {
     document.getElementById("ListaProductos").style.display = "block"
     document.getElementById("DetalleProducto").style.display = "none"
     document.getElementById("volver__button").style.display = "none"
@@ -41,7 +41,7 @@ let menos = document.getElementById("volver__button").addEventListener('click', 
 })
 
 /* Borrar todo */
-document.getElementById("BorrarTodo").addEventListener('click', function () {
+document.getElementById("BorrarTodo").addEventListener('touchend', function () {
     document.getElementById("ListaProductosItems").innerHTML = ``
     document.getElementById("ListaProductos").style.display = "none"
     document.getElementById("ListaVacia").style.display = "flex"

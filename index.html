@@ -1,76 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reto semanal #03</title>
-    <link rel="shortcut icon" href="img/logo-favicon.png" type="image/x-icon" />
-    <meta name="description" content="Mi tercera entrega del reto semanal" />
-    <meta name="keywords" content="summerhack, practicas, reto semanal" />
-    <meta name="author" content="Estevez Ezequiel" />
-    <meta name="copyright" content="Estevez 2021" />
-    <!-- ROBOTS -->
-    <meta name="robots" content="index follow" />
-    <!-- no-index no-follow -->
-    <!-- Facebook -->
-    <meta property="og:type" content="practicas" />
-    <meta property="og:image" content="img/logo.png" />
-    <meta property="og:url" content="https://ezequielestevez.com/" />
-    <!-- COMPLETAR CON URL de seridor -->
-    <meta property="og:title" content="Reto semanal #03" />
-    <meta
-      property="og:description"
-      content="Reto semanal realizado por Ezequiel Agustin Estevez"
-    />
-    <!-- Twitter -->
-    <meta property="twitter:type" content="practicas" />
-    <meta property="twitter:image" content="img/logo.png" />
-    <meta property="twitter:url" content="https://ezequielestevez.com/" />
-    <!-- COMPLETAR CON URL de servidor -->
-    <meta property="twitter:title" content="Reto semanal #03" />
-    <meta
-      property="twitter:description"
-      content="Reto semanal realizado por Ezequiel Agustin Estevez"
-    />
-    <!-- Google Fonts -->
 
-    <!-- Bootrstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <!-- Fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/88135636ad.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reto semanal #03</title>
+  <link rel="shortcut icon" href="img/logo-favicon.png" type="image/x-icon" />
+  <meta name="description" content="Mi tercera entrega del reto semanal" />
+  <meta name="keywords" content="summerhack, practicas, reto semanal" />
+  <meta name="author" content="Estevez Ezequiel" />
+  <meta name="copyright" content="Estevez 2021" />
+  <!-- ROBOTS -->
+  <meta name="robots" content="index follow" />
+  <!-- no-index no-follow -->
+  <!-- Facebook -->
+  <meta property="og:type" content="practicas" />
+  <meta property="og:image" content="img/logo.png" />
+  <meta property="og:url" content="https://ezequielestevez.com/" />
+  <!-- COMPLETAR CON URL de seridor -->
+  <meta property="og:title" content="Reto semanal #03" />
+  <meta property="og:description" content="Reto semanal realizado por Ezequiel Agustin Estevez" />
+  <!-- Twitter -->
+  <meta property="twitter:type" content="practicas" />
+  <meta property="twitter:image" content="img/logo.png" />
+  <meta property="twitter:url" content="https://ezequielestevez.com/" />
+  <!-- COMPLETAR CON URL de servidor -->
+  <meta property="twitter:title" content="Reto semanal #03" />
+  <meta property="twitter:description" content="Reto semanal realizado por Ezequiel Agustin Estevez" />
+  <!-- Google Fonts -->
 
-  <body>
-    <header>
-      <div class="menu">
-        <nav>
-          <img src="img/logo.png" alt="" />
-          <h1>Hoy no me olvido</h1>
-        </nav>
-      </div>
-    </header>
-    <section>
-      <div class="contenedor-boton-movil">
-        <div class="boton-agregar-movil">
-          <button>+</button>
+  <!-- Bootrstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/88135636ad.js" crossorigin="anonymous"></script>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <nav>
+        <img src="img/logo.png" alt="" />
+        <h1>Hoy no me olvido</h1>
+      </nav>
+    </div>
+  </header>
+  <!-- Boton agregar item -->
+  <section>
+    <div id="BotonAgregarItem" class="BotonAgregarItem">
+      <button class="btn" data-bs-toggle="modal" data-bs-target="#Modal"><img src="img/boton-agregar.png"
+          alt="" /></button>
+    </div>
+  </section>
+  <!-- Lista vacia -->
+  <section>
+    <div id="ListaVacia" class="listaVacia">
+      <h1>Aun no anotaste nada!</h1>
+    </div>
+  </section>
+  <!-- Modal /popup -->
+  <section>
+    <div id="Modal2" class="Modal2">
+      <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModal">Agregar producto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="EquisDeCerrar"></button>
+            </div>
+            <div class="modal-body">
+              <div id="formulario" class="formulario">
+                <!-- Nompre Producto -->
+                <label for="producto" class="form-label">Nombre del producto</label>
+                <input type="text" class="form-control" id="Producto" placeholder="Papas">
+                <!-- Categoria Producto -->
+                <div class="dropdown mt-4">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="Categorias"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Categoria
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="Categorias">
+                    <li><button class="dropdown-item" type="button"><img src="img/categorias/carne.svg" alt="carnes">
+                        Carnes</button></li>
+                    <li><button class="dropdown-item" type="button"><img src="img/categorias/pescado.svg"
+                          alt="pescados"> Pescados</button></li>
+                    <li><button class="dropdown-item" type="button"><img src="img/categorias/verduras.svg"
+                          alt="verduras"> Verduras</button></li>
+                    <li><button class="dropdown-item" type="button"><img src="img/categorias/lacteos.svg"
+                          alt="lacateos"> Lacteos</button></li>
+                    <li><button class="dropdown-item" type="button"><img src="img/categorias/frutas.svg" alt="frutas">
+                        Frutas</button></li>
+                    <li><button class="dropdown-item" type="button"><img src="img/categorias/cereales.svg"
+                          alt="cereales"> Cereales</button></li>
+                  </ul>
+                </div>
+                <!-- Nota Producto -->
+                <label for="nota" class="form-label mt-4">Nota</label>
+                <textarea class="form-control" id="Nota" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+              <button type="button" class="btn btn-eze">Guardar</button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="lista">
-        <h1>Aun no anotaste nada!</h1>
+    </div>
+  </section>
+  <!-- Lista de productos -->
+  <section>
+    <div id="ListaProductos" class="listaProductos">
+      <div class="ListaProductos__titulo">
+        <h1>Tu lista de productos <i class="fas fa-shopping-basket"></i>
+        </h1>
       </div>
-    </section>
-    <footer></footer>
-  </body>
+      <div class="ListaProductos__Items">
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/categorias/carne.svg" alt="Bife de chorizo"> Bife de chorizo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
+</body>
+
 </html>

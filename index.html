@@ -81,29 +81,31 @@
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Categoria
                   </button>
-                  <ul class="dropdown-menu" aria-labelledby="Categorias">
-                    <li><button class="dropdown-item" type="button"><img src="img/categorias/carne.svg" alt="carnes">
+                  <ul class="dropdown-menu menusito" aria-labelledby="Categorias">
+                    <li><button id="carne" class="dropdown-item" type="button"><img src="img/categorias/carne.svg"
+                          alt="carnes">
                         Carnes</button></li>
-                    <li><button class="dropdown-item" type="button"><img src="img/categorias/pescado.svg"
+                    <li><button id="pescados" class="dropdown-item" type="button"><img src="img/categorias/pescado.svg"
                           alt="pescados"> Pescados</button></li>
-                    <li><button class="dropdown-item" type="button"><img src="img/categorias/verduras.svg"
+                    <li><button id="verduras" class="dropdown-item" type="button"><img src="img/categorias/verduras.svg"
                           alt="verduras"> Verduras</button></li>
-                    <li><button class="dropdown-item" type="button"><img src="img/categorias/lacteos.svg"
+                    <li><button id="lacteos" class="dropdown-item" type="button"><img src="img/categorias/lacteos.svg"
                           alt="lacateos"> Lacteos</button></li>
-                    <li><button class="dropdown-item" type="button"><img src="img/categorias/frutas.svg" alt="frutas">
+                    <li><button id="frutas" class="dropdown-item" type="button"><img src="img/categorias/frutas.svg"
+                          alt="frutas">
                         Frutas</button></li>
-                    <li><button class="dropdown-item" type="button"><img src="img/categorias/cereales.svg"
+                    <li><button id="cereales" class="dropdown-item" type="button"><img src="img/categorias/cereales.svg"
                           alt="cereales"> Cereales</button></li>
                   </ul>
                 </div>
                 <!-- Nota Producto -->
                 <label for="nota" class="form-label mt-4">Nota</label>
-                <textarea class="form-control" id="Nota" rows="3"></textarea>
+                <textarea for="nota" class="form-control" id="Nota" rows="3"></textarea>
               </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-              <button type="button" class="btn btn-eze">Guardar</button>
+              <button id="guardar" type="button" class="btn btn-eze">Guardar</button>
             </div>
           </div>
         </div>
@@ -113,13 +115,14 @@
   <!-- Lista de productos -->
   <section>
     <div id="ListaProductos" class="listaProductos">
-      <div class="ListaProductos__titulo">
+      <div id="ListaProductos__titulo">
         <h1>Tu lista de productos <i class="fas fa-shopping-basket"></i>
         </h1>
       </div>
-      <div class="ListaProductos__Items">
+      <div id="ListaProductos__items">
         <ul class="list-group">
-          <li class="list-group-item"><img src="img/categorias/carne.svg" alt="Bife de chorizo"> Bife de chorizo</li>
+          <li class="list-group-item"><img src="img/categorias/carne.svg" alt="Bife de chorizo"
+              class="ListaProductos__items__icono"> Bife de chorizo</li>
         </ul>
       </div>
     </div>

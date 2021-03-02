@@ -47,6 +47,37 @@
       </nav>
     </div>
   </header>
+  <section>
+    <aside>
+      <div id="AsideAgregarItem" class="asideAgregarItem">
+        <div id="formulario" class="formulario">
+          <!-- Nompre Producto -->
+          <div class="productoInput">
+            <label for="Producto" class="form-label">Nombre del producto</label>
+            <input type="text" class="form-control producto" id="Producto" placeholder="Papas">
+          </div>
+          <!-- Categoria Producto -->
+          <div class="desplegableCategoria mt-3">
+            <label for="Categoria" class="form-label">Categroria</label>
+            <select id="Categoria" class="form-select">
+              <option><img src="img/categorias/carnes.svg" alt="">Carnes</option>
+              <option><img src="img/categorias/pescados.svg" alt="">Pescados</option>
+              <option><img src="img/categorias/frutas.svg" alt="">Frutas</option>
+              <option><img src="img/categorias/verduras.svg" alt="">Verduras</option>
+              <option><img src="img/categorias/cereales.svg" alt="">Cereales</option>
+              <option><img src="img/categorias/lacteos.svg" alt="">Lacteos</option>
+            </select>
+          </div>
+          <!-- Nota Producto -->
+          <div class="notaTextarea mt-3">
+            <label for="nota" class="form-label">Nota</label>
+            <textarea for="nota" class="form-control" id="Nota" rows="3"></textarea>
+          </div>
+        </div>
+        <button id="guardarPc" type="button" class="btn btn-eze " data-bs-dismiss="modal">Agregar</button>
+      </div>
+    </aside>
+  </section>
   <!-- Boton agregar item -->
   <section>
     <div id="BotonAgregarItem" class="BotonAgregarItem">
@@ -58,13 +89,6 @@
   <section>
     <div id="volver">
       <button id="volver__button" type="button" class="btn-close ocultar" aria-label="EquisDeCerrar"></button>
-    </div>
-  </section>
-  <!-- Boton borrar todo -->
-  <section>
-    <div id="BorrarTodo" class="borrarTodo">
-      <button class="btn"><img src="img/boton-restar.png"
-          alt="" /></button>
     </div>
   </section>
   <!-- Lista vacia -->
@@ -88,7 +112,7 @@
                 <!-- Nompre Producto -->
                 <div class="productoInput">
                   <label for="producto" class="form-label">Nombre del producto</label>
-                  <input type="text" class="form-control" id="Producto" placeholder="Papas">
+                  <input type="text" class="form-control producto" id="Producto2" placeholder="Papas">
                 </div>
                 <!-- Categoria Producto -->
                 <div class="desplegableCategoria mt-3">
@@ -111,7 +135,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-              <button id="guardar" type="button" class="btn btn-eze " data-bs-dismiss="modal">Guardar</button>
+              <button id="guardarMovil" type="button" class="btn btn-eze " data-bs-dismiss="modal">Agregar</button>
             </div>
           </div>
         </div>
@@ -136,6 +160,12 @@
     <div class="container">
       <div id="DetalleProducto" class="ocultar">
       </div>
+    </div>
+  </section>
+  <!-- Boton borrar todo -->
+  <section>
+    <div id="BorrarTodo" class="borrarTodo">
+      <button class="btn"><img src="img/boton-restar.png" alt="" /></button>
     </div>
   </section>
   <footer></footer>

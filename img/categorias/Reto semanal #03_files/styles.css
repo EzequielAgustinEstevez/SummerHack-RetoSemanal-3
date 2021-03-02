@@ -25,7 +25,7 @@ nav h1 {
   opacity: 1;
 }
 .BotonAgregarItem {
-  position: absolute; /* toma la poscicion que se le de tomando encuenta la pantalla (no el flujo del sitio) */
+  position: fixede; /* toma la poscicion que se le de tomando encuenta la pantalla (no el flujo del sitio) */
   bottom: 10px;
   right: 10px;
 }
